@@ -12,7 +12,7 @@ builder.Services.AddNotyf(config => {
 
     config.DurationInSeconds = 7;
     config.IsDismissable = true;
-    config.Position = NotyfPosition.TopRight;
+    config.Position = NotyfPosition.BottomRight;
 });
 
 
