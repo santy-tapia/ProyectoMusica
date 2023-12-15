@@ -27,7 +27,7 @@ namespace ProyectoMusica.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(ListadoGruposViewModel vm)
         {
-            var numRegistros = _conf.GetValue("RegistrosPorPagina",5);
+            var numRegistros = _conf.GetValue("RegistrosPorPagina",4);
             var grupos = _ctx.Grupos;
             var total = grupos.Count();
             vm.Total = total;
